@@ -15,12 +15,13 @@
 get_header(); ?>
 <section class="home-page">
 	<div class="site-content">
-		<?php while ( have_posts() ) : the_post(); ?>
+		<!--<?php while ( have_posts() ) : the_post(); ?>
 			<div class='homepage-hero'>
 				<?php the_content(); ?>
 				<a class="button" href="<?php echo home_url(); ?>/blog">View Our Work</a>
 			</div>
 		<?php endwhile; // end of the loop. ?>
+-->
 	</div><!-- .container -->
 </section><!-- .home-page -->
 
@@ -33,7 +34,7 @@ get_header(); ?>
        <h2><?php the_title(); ?></h2>
        <?php the_excerpt(); ?> 
        <a class="read-more-link" href="<?php the_permalink(); ?>">Read More <span>&rsaquo;</span></a>
-     <?php endwhile; ?> 
+     <?php endwhile; ?> -->
     <?php wp_reset_query(); ?>
    </div>
   </div>
