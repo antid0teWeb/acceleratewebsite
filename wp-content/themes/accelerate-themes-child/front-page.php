@@ -15,13 +15,13 @@
 get_header(); ?>
 <section class="home-page">
 	<div class="site-content">
-		<!--<?php while ( have_posts() ) : the_post(); ?>
+		<?php while ( have_posts() ) : the_post(); ?>
 			<div class='homepage-hero'>
 				<?php the_content(); ?>
 				<a class="button" href="<?php echo home_url(); ?>/blog">View Our Work</a>
 			</div>
 		<?php endwhile; // end of the loop. ?>
--->
+
 	</div><!-- .container -->
 </section><!-- .home-page -->
 
@@ -34,8 +34,8 @@ get_header(); ?>
             <?php while ( have_posts() ) : the_post(); 
         
                 $image_1 = get_field("image_1"); 
-                $size = 'medium'; 
-            ?>
+                $size = 'medium'; ?>
+            
             <li class="individual-featured-work">
                 <figure>
         
@@ -65,5 +65,11 @@ get_header(); ?>
    </div>
   </div>
 </section>
+
+<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+<div id="secondary" class="widget-area" role="complementary">
+	<?php dynamic_sidebar( 'sidebar-2' ); ?>
+</div>
+<?php endif; ?>
 
 <?php get_footer(); ?>

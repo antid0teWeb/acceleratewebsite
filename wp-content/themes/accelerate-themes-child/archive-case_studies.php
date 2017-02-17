@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages
+ * The template for displaying the case studies archive page
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -20,16 +20,14 @@ get_header(); ?>
             
                 $image_1 = get_field('image_1');
                 $size = 'full'; 
-                $services = get_field("services");
+                $services = get_field("services"); ?>
             
-            ?>
             <article class="case-study">
                     <aside class="case-study-sidebar">
-                        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                        <h5><?php echo $services; ?></h5>
-                    
-                        <?php the_excerpt(); ?>
-                        <p><strong><a href="<?php the_permalink(); ?>">View Project</a></strong></p>
+                        <h2 class="campaign-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                        <h5 class="services"><?php echo $services; ?></h5>
+                    <p class="element-excerpt"><?php the_excerpt(); ?></p>
+                        <p><strong><a class="view-project" href="<?php the_permalink(); ?>">View Project ></a></strong></p>
                         
                     </aside>
                     <div class="case-study-images">
@@ -39,7 +37,7 @@ get_header(); ?>
                         </a>
                     </div>
                 </article>
-				<?php the_excerpt(); ?>
+				
 			<?php endwhile; // end of the loop. ?>
 
 		</div><!-- #content -->
