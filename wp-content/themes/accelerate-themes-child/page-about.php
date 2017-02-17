@@ -66,7 +66,8 @@ get_header(); ?>
             <br>
         
           <section class="pre-footer">
-                <h2 class="interested">Interested in working with us? </h2>  
+                <h2 class="interested">Interested in working with us? </h2> 
+              <br>
                     <a id="contact-button" class="button" href="<?php echo home_url(); ?>/contact">Contact</a>
           </section>
         

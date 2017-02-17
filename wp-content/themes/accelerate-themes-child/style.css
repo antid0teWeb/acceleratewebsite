@@ -222,8 +222,8 @@ textarea#nf-field-3 {
     width: 40%;
     margin-left: auto;
     margin-right: auto;
-    display: inline;
-    flex-direction: row;
+  
+    
    
     
 }
@@ -245,15 +245,17 @@ textarea#nf-field-3 {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    display: flex;
+    
 }
 ct-button {
-    margin: 10px;
+    margin: 20px;
     float: right;
+   
 }
 .interested {
-    
+    float: left;
     color: black;
+    padding-right: 70px;
 }
 .pre-footer {
     margin: 50px;
